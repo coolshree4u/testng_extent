@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Plivo Assignment Test]">
+  <test name="Plivo Message Test">
+    <packages>
+      <package name="com.plivo.tests"/>
+    </packages>
+    <classes>
+      <class name="com.plivo.tests.MessageTest"/>
+    </classes>
+  </test> <!-- Plivo Message Test -->
+  <test name="Plivo Message Test(failed)">
+    <classes>
+      <class name="com.plivo.tests.MessageTest">
+        <methods>
+          <include name="getNumbers"/>
+          <include name="readMsgCharge"/>
+          <include name="sendMessage"/>
+          <include name="verifyCashCredit"/>
+        </methods>
+      </class> <!-- com.plivo.tests.MessageTest -->
+    </classes>
+  </test> <!-- Plivo Message Test(failed) -->
+</suite> <!-- Failed suite [Plivo Assignment Test] -->
